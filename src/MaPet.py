@@ -18,7 +18,7 @@ class MaPetTest(unittest.TestCase):
                 'platformName': 'iOS',
                 'platformVersion': '10.3',
                 'deviceName': 'iPhone 7',
-                'noReset': 'True'
+                'noReset': True
             })
 
 #   Register
@@ -182,14 +182,15 @@ class MaPetTest(unittest.TestCase):
         cell = self.driver.find_elements_by_xpath('//XCUIElementTypeApplication[@name="MaPet"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther'
                                                   '/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther'
                                                   '/XCUIElementTypeTable/XCUIElementTypeCell')
+        el1 = self.driver.find_elements_by_class_name('XCUIElementTypeCell')[2]
+        el2 = self.driver.find_elements_by_class_name('XCUIElementTypeCell')[3]
 
-        # Iterate the Cell List and give Random likes
-        for i in cell:
-            like = randint(0, 1)
-            if like == 1:
-                i.find_elements_by_class_name('XCUIElementTypeButton')[0].click()
+        el1x = el1.location['x']
+        el1y = el1.location['y']
+        el2x = el2.location['x']
+        el2y = el2.location['y']
 
-        sleep(2)
+        self.driver.swipe(el1x, el1y, el2x, el2y)
 
     def tearDown(self):
         self.driver.quit()
