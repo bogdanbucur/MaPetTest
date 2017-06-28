@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="034259be-44be-46a1-ad61-60bbcaae1279" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dictionaries/bogdanbucur.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MaPet.py" afterPath="$PROJECT_DIR$/src/MaPet.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,12 +19,19 @@
       <file leaf-file-name="MaPet.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/MaPet.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="615">
-              <caret line="192" column="29" lean-forward="false" selection-start-line="192" selection-start-column="29" selection-end-line="192" selection-end-column="29" />
+            <state relative-caret-position="555">
+              <caret line="183" column="42" lean-forward="true" selection-start-line="183" selection-start-column="42" selection-end-line="183" selection-end-column="42" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
-                <element signature="e#743#755#0" expanded="false" />
-                <element signature="e#7290#7308#0" expanded="false" />
+                <element signature="e#823#2026#0" expanded="false" />
+                <element signature="e#2081#2977#0" expanded="false" />
+                <element signature="e#3019#3780#0" expanded="false" />
+                <element signature="e#3834#6184#0" expanded="false" />
+                <element signature="e#6259#7012#0" expanded="false" />
+                <element signature="e#7092#8727#0" expanded="false" />
+                <element signature="e#8789#10821#0" expanded="false" />
+                <element signature="e#10855#10873#0" expanded="false" />
+                <marker date="1498662523000" expanded="true" signature="793:2026" ph="..." />
               </folding>
             </state>
           </provider>
@@ -41,6 +50,9 @@
     <findStrings>
       <find>x</find>
       <find>pos</find>
+      <find>move</find>
+      <find>opts['x']</find>
+      <find>opts</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -50,6 +62,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/iPhone6sPlus.json" />
+        <option value="/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/appium/webdriver/common/touch_action.py" />
+        <option value="/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/appium/webdriver/webdriver.py" />
         <option value="$PROJECT_DIR$/src/MaPet.py" />
       </list>
     </option>
@@ -90,6 +104,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane" />
       <pane id="Scope">
         <subPane subId="Project Files">
@@ -117,9 +132,22 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="MaPetTest">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT=".idea">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -140,7 +168,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests for MaPet.MaPetTest.test_6">
+  <component name="RunManager" selected="Python tests.Unittests for MaPet.MaPetTest">
     <configuration default="false" name="Unittests for MaPet.MaPetTest" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -168,6 +196,21 @@
       <module name="MaPetTest" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;MaPet.MaPetTest.test_6&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Unittests for MaPet.MaPetTest.test1" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="MaPetTest" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;MaPet.MaPetTest.test1&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method />
     </configuration>
@@ -235,14 +278,16 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method />
     </configuration>
-    <list size="2">
+    <list size="3">
       <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests for MaPet.MaPetTest" />
       <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests for MaPet.MaPetTest.test_6" />
+      <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests for MaPet.MaPetTest.test1" />
     </list>
     <recent_temporary>
-      <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests for MaPet.MaPetTest.test_6" />
-        <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests for MaPet.MaPetTest" />
+      <list size="3">
+        <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests for MaPet.MaPetTest" />
+        <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests for MaPet.MaPetTest.test1" />
+        <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests for MaPet.MaPetTest.test_6" />
       </list>
     </recent_temporary>
   </component>
@@ -260,35 +305,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_for_MaPet_MaPetTest_test_6 - 2017.06.27 at 17h 39m 53s.xml">
-      <configuration name="Unittests for MaPet.MaPetTest.test_6" configurationId="tests" />
+    <history-entry file="Unittests_for_MaPet_MaPetTest - 2017.06.28 at 16h 55m 30s.xml">
+      <configuration name="Unittests for MaPet.MaPetTest" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_MaPet_MaPetTest_test_6 - 2017.06.27 at 17h 42m 58s.xml">
-      <configuration name="Unittests for MaPet.MaPetTest.test_6" configurationId="tests" />
+    <history-entry file="Unittests_for_MaPet_MaPetTest - 2017.06.28 at 17h 06m 56s.xml">
+      <configuration name="Unittests for MaPet.MaPetTest" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_MaPet_MaPetTest_test_6 - 2017.06.27 at 17h 43m 56s.xml">
-      <configuration name="Unittests for MaPet.MaPetTest.test_6" configurationId="tests" />
+    <history-entry file="Unittests_for_MaPet_MaPetTest - 2017.06.28 at 17h 08m 41s.xml">
+      <configuration name="Unittests for MaPet.MaPetTest" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_MaPet_MaPetTest_test_6 - 2017.06.27 at 17h 46m 24s.xml">
-      <configuration name="Unittests for MaPet.MaPetTest.test_6" configurationId="tests" />
+    <history-entry file="Unittests_for_MaPet_MaPetTest - 2017.06.28 at 17h 11m 41s.xml">
+      <configuration name="Unittests for MaPet.MaPetTest" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_MaPet_MaPetTest_test_6 - 2017.06.27 at 17h 48m 13s.xml">
-      <configuration name="Unittests for MaPet.MaPetTest.test_6" configurationId="tests" />
+    <history-entry file="Unittests_for_MaPet_MaPetTest - 2017.06.28 at 17h 17m 41s.xml">
+      <configuration name="Unittests for MaPet.MaPetTest" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_MaPet_MaPetTest_test_6 - 2017.06.27 at 17h 49m 10s.xml">
-      <configuration name="Unittests for MaPet.MaPetTest.test_6" configurationId="tests" />
+    <history-entry file="Unittests_for_MaPet_MaPetTest - 2017.06.28 at 17h 28m 51s.xml">
+      <configuration name="Unittests for MaPet.MaPetTest" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_MaPet_MaPetTest_test_6 - 2017.06.27 at 17h 53m 34s.xml">
-      <configuration name="Unittests for MaPet.MaPetTest.test_6" configurationId="tests" />
+    <history-entry file="Unittests_for_MaPet_MaPetTest - 2017.06.28 at 18h 05m 27s.xml">
+      <configuration name="Unittests for MaPet.MaPetTest" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_MaPet_MaPetTest_test_6 - 2017.06.27 at 17h 54m 21s.xml">
-      <configuration name="Unittests for MaPet.MaPetTest.test_6" configurationId="tests" />
+    <history-entry file="Unittests_for_MaPet_MaPetTest - 2017.06.28 at 18h 06m 09s.xml">
+      <configuration name="Unittests for MaPet.MaPetTest" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_MaPet_MaPetTest_test_6 - 2017.06.27 at 17h 57m 43s.xml">
-      <configuration name="Unittests for MaPet.MaPetTest.test_6" configurationId="tests" />
+    <history-entry file="Unittests_for_MaPet_MaPetTest - 2017.06.28 at 18h 07m 16s.xml">
+      <configuration name="Unittests for MaPet.MaPetTest" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_MaPet_MaPetTest_test_6 - 2017.06.27 at 17h 58m 42s.xml">
-      <configuration name="Unittests for MaPet.MaPetTest.test_6" configurationId="tests" />
+    <history-entry file="Unittests_for_MaPet_MaPetTest - 2017.06.28 at 18h 19m 10s.xml">
+      <configuration name="Unittests for MaPet.MaPetTest" configurationId="tests" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -298,6 +343,7 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.119791664" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32913843" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37463698" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -311,7 +357,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -320,7 +365,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="2" />
+      <option name="time" value="7" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -331,8 +376,15 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
-            <element signature="e#743#755#0" expanded="false" />
-            <element signature="e#7290#7308#0" expanded="false" />
+            <element signature="e#823#2026#0" expanded="false" />
+            <element signature="e#2081#2977#0" expanded="false" />
+            <element signature="e#3019#3780#0" expanded="false" />
+            <element signature="e#3834#6184#0" expanded="false" />
+            <element signature="e#6259#7012#0" expanded="false" />
+            <element signature="e#7092#8727#0" expanded="false" />
+            <element signature="e#8789#10821#0" expanded="false" />
+            <element signature="e#10855#10873#0" expanded="false" />
+            <marker date="1498662523000" expanded="true" signature="793:2026" ph="..." />
           </folding>
         </state>
       </provider>
@@ -343,8 +395,15 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
-            <element signature="e#743#755#0" expanded="false" />
-            <element signature="e#7290#7308#0" expanded="false" />
+            <element signature="e#823#2026#0" expanded="false" />
+            <element signature="e#2081#2977#0" expanded="false" />
+            <element signature="e#3019#3780#0" expanded="false" />
+            <element signature="e#3834#6184#0" expanded="false" />
+            <element signature="e#6259#7012#0" expanded="false" />
+            <element signature="e#7092#8727#0" expanded="false" />
+            <element signature="e#8789#10821#0" expanded="false" />
+            <element signature="e#10855#10873#0" expanded="false" />
+            <marker date="1498662523000" expanded="true" signature="793:2026" ph="..." />
           </folding>
         </state>
       </provider>
@@ -355,8 +414,53 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
-            <element signature="e#743#755#0" expanded="false" />
-            <element signature="e#7290#7308#0" expanded="false" />
+            <element signature="e#823#2026#0" expanded="false" />
+            <element signature="e#2081#2977#0" expanded="false" />
+            <element signature="e#3019#3780#0" expanded="false" />
+            <element signature="e#3834#6184#0" expanded="false" />
+            <element signature="e#6259#7012#0" expanded="false" />
+            <element signature="e#7092#8727#0" expanded="false" />
+            <element signature="e#8789#10821#0" expanded="false" />
+            <element signature="e#10855#10873#0" expanded="false" />
+            <marker date="1498662523000" expanded="true" signature="793:2026" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MaPet.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+            <element signature="e#823#2026#0" expanded="false" />
+            <element signature="e#2081#2977#0" expanded="false" />
+            <element signature="e#3019#3780#0" expanded="false" />
+            <element signature="e#3834#6184#0" expanded="false" />
+            <element signature="e#6259#7012#0" expanded="false" />
+            <element signature="e#7092#8727#0" expanded="false" />
+            <element signature="e#8789#10821#0" expanded="false" />
+            <element signature="e#10855#10873#0" expanded="false" />
+            <marker date="1498662523000" expanded="true" signature="793:2026" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MaPet.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+            <element signature="e#823#2026#0" expanded="false" />
+            <element signature="e#2081#2977#0" expanded="false" />
+            <element signature="e#3019#3780#0" expanded="false" />
+            <element signature="e#3834#6184#0" expanded="false" />
+            <element signature="e#6259#7012#0" expanded="false" />
+            <element signature="e#7092#8727#0" expanded="false" />
+            <element signature="e#8789#10821#0" expanded="false" />
+            <element signature="e#10855#10873#0" expanded="false" />
+            <marker date="1498662523000" expanded="true" signature="793:2026" ph="..." />
           </folding>
         </state>
       </provider>
@@ -374,8 +478,15 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
-            <element signature="e#743#755#0" expanded="false" />
-            <element signature="e#7290#7308#0" expanded="false" />
+            <element signature="e#823#2026#0" expanded="false" />
+            <element signature="e#2081#2977#0" expanded="false" />
+            <element signature="e#3019#3780#0" expanded="false" />
+            <element signature="e#3834#6184#0" expanded="false" />
+            <element signature="e#6259#7012#0" expanded="false" />
+            <element signature="e#7092#8727#0" expanded="false" />
+            <element signature="e#8789#10821#0" expanded="false" />
+            <element signature="e#10855#10873#0" expanded="false" />
+            <marker date="1498662523000" expanded="true" signature="793:2026" ph="..." />
           </folding>
         </state>
       </provider>
@@ -394,8 +505,15 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
-            <element signature="e#743#755#0" expanded="false" />
-            <element signature="e#7290#7308#0" expanded="false" />
+            <element signature="e#823#2026#0" expanded="false" />
+            <element signature="e#2081#2977#0" expanded="false" />
+            <element signature="e#3019#3780#0" expanded="false" />
+            <element signature="e#3834#6184#0" expanded="false" />
+            <element signature="e#6259#7012#0" expanded="false" />
+            <element signature="e#7092#8727#0" expanded="false" />
+            <element signature="e#8789#10821#0" expanded="false" />
+            <element signature="e#10855#10873#0" expanded="false" />
+            <marker date="1498662523000" expanded="true" signature="793:2026" ph="..." />
           </folding>
         </state>
       </provider>
@@ -406,8 +524,15 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
-            <element signature="e#743#755#0" expanded="false" />
-            <element signature="e#7290#7308#0" expanded="false" />
+            <element signature="e#823#2026#0" expanded="false" />
+            <element signature="e#2081#2977#0" expanded="false" />
+            <element signature="e#3019#3780#0" expanded="false" />
+            <element signature="e#3834#6184#0" expanded="false" />
+            <element signature="e#6259#7012#0" expanded="false" />
+            <element signature="e#7092#8727#0" expanded="false" />
+            <element signature="e#8789#10821#0" expanded="false" />
+            <element signature="e#10855#10873#0" expanded="false" />
+            <marker date="1498662523000" expanded="true" signature="793:2026" ph="..." />
           </folding>
         </state>
       </provider>
@@ -418,8 +543,15 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
-            <element signature="e#743#755#0" expanded="false" />
-            <element signature="e#7290#7308#0" expanded="false" />
+            <element signature="e#823#2026#0" expanded="false" />
+            <element signature="e#2081#2977#0" expanded="false" />
+            <element signature="e#3019#3780#0" expanded="false" />
+            <element signature="e#3834#6184#0" expanded="false" />
+            <element signature="e#6259#7012#0" expanded="false" />
+            <element signature="e#7092#8727#0" expanded="false" />
+            <element signature="e#8789#10821#0" expanded="false" />
+            <element signature="e#10855#10873#0" expanded="false" />
+            <marker date="1498662523000" expanded="true" signature="793:2026" ph="..." />
           </folding>
         </state>
       </provider>
@@ -430,8 +562,15 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
-            <element signature="e#743#755#0" expanded="false" />
-            <element signature="e#7290#7308#0" expanded="false" />
+            <element signature="e#823#2026#0" expanded="false" />
+            <element signature="e#2081#2977#0" expanded="false" />
+            <element signature="e#3019#3780#0" expanded="false" />
+            <element signature="e#3834#6184#0" expanded="false" />
+            <element signature="e#6259#7012#0" expanded="false" />
+            <element signature="e#7092#8727#0" expanded="false" />
+            <element signature="e#8789#10821#0" expanded="false" />
+            <element signature="e#10855#10873#0" expanded="false" />
+            <marker date="1498662523000" expanded="true" signature="793:2026" ph="..." />
           </folding>
         </state>
       </provider>
@@ -442,8 +581,15 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
-            <element signature="e#743#755#0" expanded="false" />
-            <element signature="e#7290#7308#0" expanded="false" />
+            <element signature="e#823#2026#0" expanded="false" />
+            <element signature="e#2081#2977#0" expanded="false" />
+            <element signature="e#3019#3780#0" expanded="false" />
+            <element signature="e#3834#6184#0" expanded="false" />
+            <element signature="e#6259#7012#0" expanded="false" />
+            <element signature="e#7092#8727#0" expanded="false" />
+            <element signature="e#8789#10821#0" expanded="false" />
+            <element signature="e#10855#10873#0" expanded="false" />
+            <marker date="1498662523000" expanded="true" signature="793:2026" ph="..." />
           </folding>
         </state>
       </provider>
@@ -456,53 +602,81 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/iPhone6sPlus.json" />
-    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/case.py">
+    <entry file="file://$USER_HOME$/Library/Caches/PyCharmCE2017.1/python_stubs/-2010535109/builtins.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="442" column="8" lean-forward="false" selection-start-line="442" selection-start-column="8" selection-end-line="442" selection-end-column="8" />
-          <folding />
+        <state relative-caret-position="207">
+          <caret line="740" column="8" lean-forward="false" selection-start-line="740" selection-start-column="8" selection-end-line="740" selection-end-column="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/selenium/webdriver/remote/webelement.py">
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/appium/webdriver/webdriver.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="542" column="38" lean-forward="false" selection-start-line="542" selection-start-column="37" selection-end-line="542" selection-end-column="38" />
+        <state relative-caret-position="469">
+          <caret line="259" column="39" lean-forward="false" selection-start-line="259" selection-start-column="39" selection-end-line="259" selection-end-column="39" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/appium/webdriver/common/touch_action.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="28" column="6" lean-forward="false" selection-start-line="28" selection-start-column="6" selection-end-line="28" selection-end-column="6" />
+        <state relative-caret-position="190">
+          <caret line="52" column="48" lean-forward="false" selection-start-line="52" selection-start-column="44" selection-end-line="52" selection-end-column="48" />
         </state>
       </provider>
     </entry>
-    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/appium/webdriver/webdriver.py">
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1185">
-          <caret line="242" column="8" lean-forward="false" selection-start-line="242" selection-start-column="8" selection-end-line="242" selection-end-column="8" />
+        <state relative-caret-position="335">
+          <caret line="236" column="0" lean-forward="false" selection-start-line="236" selection-start-column="0" selection-end-line="236" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Library/Caches/PyCharmCE2017.1/python_stubs/-2010535109/builtins.py">
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/suite.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="207">
-          <caret line="740" column="8" lean-forward="false" selection-start-line="740" selection-start-column="8" selection-end-line="740" selection-end-column="8" />
+          <caret line="83" column="0" lean-forward="false" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/runner.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="500">
+          <caret line="194" column="0" lean-forward="false" selection-start-line="194" selection-start-column="0" selection-end-line="194" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/selenium/webdriver/remote/webelement.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="401" column="0" lean-forward="false" selection-start-line="401" selection-start-column="0" selection-end-line="401" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/case.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="442" column="8" lean-forward="false" selection-start-line="442" selection-start-column="8" selection-end-line="442" selection-end-column="8" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/MaPet.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="615">
-          <caret line="192" column="29" lean-forward="false" selection-start-line="192" selection-start-column="29" selection-end-line="192" selection-end-column="29" />
+        <state relative-caret-position="555">
+          <caret line="183" column="42" lean-forward="true" selection-start-line="183" selection-start-column="42" selection-end-line="183" selection-end-column="42" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
-            <element signature="e#743#755#0" expanded="false" />
-            <element signature="e#7290#7308#0" expanded="false" />
+            <element signature="e#823#2026#0" expanded="false" />
+            <element signature="e#2081#2977#0" expanded="false" />
+            <element signature="e#3019#3780#0" expanded="false" />
+            <element signature="e#3834#6184#0" expanded="false" />
+            <element signature="e#6259#7012#0" expanded="false" />
+            <element signature="e#7092#8727#0" expanded="false" />
+            <element signature="e#8789#10821#0" expanded="false" />
+            <element signature="e#10855#10873#0" expanded="false" />
+            <marker date="1498662523000" expanded="true" signature="793:2026" ph="..." />
           </folding>
         </state>
       </provider>
