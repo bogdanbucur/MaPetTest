@@ -22,9 +22,8 @@ class MaPetTest(unittest.TestCase):
                 'fullReset': False
             })
 
-
-#   Register
-    def test_1(self):
+    # Register
+    def test_001(self):
         sleep(2)
         self.driver.find_element_by_name('REGISTER').click()
 
@@ -56,8 +55,8 @@ class MaPetTest(unittest.TestCase):
         self.driver.find_element_by_name('Yes').click()
         sleep(3)
 
-#   Login with Logout
-    def test_2(self):
+    # Login with Logout
+    def test_002(self):
 
         self.driver.find_element_by_name('LOGIN').click()
         sleep(2)
@@ -87,8 +86,8 @@ class MaPetTest(unittest.TestCase):
         self.driver.find_element_by_name('Yes').click()
         sleep(3)
 
-#   Login
-    def test_3(self):
+    # Login
+    def test_003(self):
         # Enter Login Page
         sleep(2)
         self.driver.find_element_by_name('LOGIN').click()
@@ -113,8 +112,8 @@ class MaPetTest(unittest.TestCase):
         self.driver.find_element_by_accessibility_id('CONTINUE').click()
         sleep(2)
 
-#   Create Custom Pet
-    def test_4(self):
+    # Create Custom Pet
+    def test_004(self):
         sleep(2)
 
         try:
@@ -181,8 +180,8 @@ class MaPetTest(unittest.TestCase):
         # Create Pet
         self.driver.find_element_by_accessibility_id('CREATE PET').click()
 
-#   Select Mr. Fluff and Create First Post
-    def test_5(self):
+    # Select Mr. Fluff and Create First Post
+    def test_005(self):
         sleep(2)
         self.driver.find_element_by_name('Mr. Fluff').click()
         self.driver.find_element_by_name('CONTINUE').click()
@@ -204,8 +203,8 @@ class MaPetTest(unittest.TestCase):
         self.driver.find_element_by_accessibility_id('btn send').click()
         sleep(5)
 
-#   Scroll through NewsFeed and give some likes
-    def test_6(self):
+    # Scroll through NewsFeed and give some likes
+    def test_006(self):
         sleep(2)
 
         # Go to NewsFeed
@@ -253,8 +252,8 @@ class MaPetTest(unittest.TestCase):
 
         sleep(4)
 
-#   Do a Random Pet as Friend
-    def test_7(self):
+    # Add a Random Pet as Friend
+    def test_007(self):
         sleep(2)
 
         # Go to NewsFeed
@@ -307,6 +306,129 @@ class MaPetTest(unittest.TestCase):
             el2y = el2.location['y']
 
             self.driver.swipe(el2x, el2y, (xNavbar - el2x), (yNavbar - el2y), 1000)
+
+    # Fill in About section
+    def test_008(self):
+        sleep(2)
+
+        # Enter About section
+        self.driver.find_element_by_name('About').click()
+
+        # Select Breed
+        self.driver.find_elements_by_class_name('XCUIElementTypeButton')[4].click()
+        self.driver.find_element_by_name('Done').click()
+        sleep(2)
+        breedField = self.driver.find_elements_by_class_name('XCUIElementTypeTextField')[0]
+        breedField.click()
+        breedField.send_keys('HuffleFluff')
+        self.driver.find_element_by_name('Confirm').click()
+
+        # # Input Date of Birth
+        # self.driver.find_elements_by_class_name('XCUIElementTypeTextField')[3].click()
+        # datePicker = self.driver.find_elements_by_class_name('XCUIElementTypeDatePicker')
+        # datePicker['contains(@value, "June")'].click()
+        # datePicker['contains(@value, "14")'].click()
+        # datePicker['contains(@value, "2016")'].click()
+        # self.driver.find_element_by_name('Done').click()
+
+        # Input Place of Birth
+        pobField = self.driver.find_elements_by_class_name('XCUIElementTypeTextField')[4]
+        pobField.click()
+        pobField.send_keys('Bucharest')
+        self.driver.find_element_by_name('Done').click()
+
+        # Input Weight
+        weightField = self.driver.find_elements_by_class_name('XCUIElementTypeTextField')[5]
+        weightField.click()
+        weightField.send_keys('12.4 kg')
+        self.driver.find_element_by_name('Done').click()
+
+        # Save Data
+        self.driver.find_element_by_name('SAVE').click()
+        sleep(2)
+
+    # Create a Post with Media
+    def test_009(self):
+        sleep(2)
+
+        # Enter Create Post View
+        self.driver.find_element_by_name("Woof! What's up?").click()
+
+        # Input Text
+        textField = self.driver.find_element_by_class_name('XCUIElementTypeTextView')
+        textField.click()
+        textField.send_keys('First post with media. Woof!')
+        self.driver.find_element_by_name('Done').click()
+
+        # Add Location
+        self.driver.find_element_by_name('Location').click()
+        self.driver.find_elements_by_class_name('XCUIElementTypeCell')[0].click()
+
+        # Add Media
+        self.driver.find_element_by_name('icn_bazaar_add.png').click()
+        self.driver.find_element_by_name('Import from Gallery').click()
+        sleep(2)
+        self.driver.find_elements_by_class_name('XCUIElementTypeCell')[1].click()
+        self.driver.find_element_by_name('Select(1)').click()
+
+        # Create Post
+        self.driver.find_element_by_name('btn send').click()
+        sleep(3)
+
+    # Fill in Account Details
+    def test_010(self):
+        sleep(2)
+
+        # Enter Settings View
+        self.driver.find_element_by_name('icn settings').click()
+
+        # Enter Account Settings View
+        self.driver.find_element_by_name('Account Settings').click()
+
+        # Select Male Gender
+        self.driver.find_element_by_name('Gender').click()
+
+        picker = self.driver.find_element_by_class_name('XCUIElementTypePickerWheel')
+        xPicker = picker.location['x']
+        yPicker = picker.location['y']
+        heightPicker = picker.size['height']
+        widthPicker = picker.size['width']
+
+        self.driver.swipe(xPicker + widthPicker / 2, yPicker + heightPicker / 2 + 25, xPicker + widthPicker / 2, yPicker + heightPicker / 2)
+        self.driver.find_element_by_name('Done').click()
+
+        # Input Phone Number
+        sleep(2)
+        phoneField = self.driver.find_element_by_name('Telephone')
+        phoneField.click()
+        phoneField.send_keys('(555) 555 - 5555')
+        self.driver.find_element_by_name('Done').click()
+
+        # Input Website
+        webField = self.driver.find_element_by_name('Website')
+        webField.click()
+        webField.send_keys('www.google.com')
+        self.driver.find_element_by_name('Done').click()
+
+        # Input Address
+        addressField = self.driver.find_element_by_name('Address')
+        addressField.click()
+        addressField.send_keys('93.102.15.240')
+        self.driver.find_element_by_name('Done').click()
+
+        # Input City
+        cityField = self.driver.find_element_by_name('City')
+        cityField.click()
+        cityField.send_keys('Bucharest')
+        self.driver.find_element_by_name('Done').click()
+
+        # Save Data
+        self.driver.find_element_by_name('Save').click()
+        sleep(3)
+
+    # # Do something
+    # def test_011(self):
+    #     pass
 
     def tearDown(self):
         self.driver.quit()
