@@ -426,9 +426,69 @@ class MaPetTest(unittest.TestCase):
         self.driver.find_element_by_name('Save').click()
         sleep(3)
 
-    # # Do something
-    # def test_011(self):
-    #     pass
+    # Check credits total and place an Offer afterwards
+    def test_011(self):
+        sleep(2)
+
+        # Go to Settings
+        self.driver.find_element_by_name('icn settings').click()
+
+        # Go to Credits and check total
+        self.driver.find_element_by_name('Credits').click()
+
+        creditsText = self.driver.find_element_by_class_name('XCUIElementTypeAlert').get_attribute('name')
+        creditsList = [int(s) for s in creditsText.split() if s.isdigit()]
+        credits = int(''.join(map(str, creditsList)))
+
+        self.driver.find_element_by_name('Ok').click()
+
+        if credits > 50:
+
+            # Go to My Offers
+            self.driver.find_element_by_name('My Offers').click()
+            self.driver.find_elements_by_class_name('XCUIElementTypeButton')[1].click()
+
+            # Input title
+            titleField = self.driver.find_elements_by_class_name('XCUIElementTypeTextField')[0]
+            titleField.click()
+            sleep(2)
+            titleField.send_keys('Giving away my Fluff')
+            self.driver.find_element_by_name('Done').click()
+
+            # Input description
+            descriptionField = self.driver.find_elements_by_class_name('XCUIElementTypeTextView')[0]
+            descriptionField.click()
+            descriptionField.send_keys('My Fluff is the fluffiest fluff in the whole FluffLand and I am trying to find a more suitable owner for him.'
+                                       'You need to be able to fully understand this kind of fluffness in order for him to feel comfortable.')
+            self.driver.find_element_by_name('Done').click()
+
+            # Add Photo
+            self.driver.find_element_by_name('icn_bazaar_add.png').click()
+            self.driver.find_element_by_name('Import from Gallery').click()
+            sleep(2)
+            self.driver.find_elements_by_class_name('XCUIElementTypeCell')[2].click()
+            self.driver.find_element_by_name('Select(1)').click()
+
+            # Select Free as Price
+            self.driver.find_elements_by_class_name('XCUIElementTypeTextField')[1].click()
+            self.driver.find_element_by_name('Free').click()
+            self.driver.find_element_by_name('Done').click()
+
+            # Select Offer
+            self.driver.find_element_by_name('Offer').click()
+
+            # Scroll to bottom
+            xSilver = self.driver.find_element_by_xpath('//XCUIElementTypeScrollView/XCUIElementTypeOther[3]').size['width'] / 2
+            ySilver = self.driver.find_element_by_name('Silver').location['y']
+            xPhotos = self.driver.find_element_by_xpath('//XCUIElementTypeScrollView/XCUIElementTypeOther[3]').size['width'] / 2
+            yPhotos = self.driver.find_element_by_name('Photos').location['y']
+
+            self.driver.swipe(xSilver, ySilver, xPhotos, yPhotos, 1000)
+            print(xSilver, ySilver, xPhotos, yPhotos)
+
+            # Create Offer
+            self.driver.find_element_by_name('Create').click()
+            sleep(4)
 
     def tearDown(self):
         self.driver.quit()
