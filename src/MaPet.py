@@ -479,11 +479,11 @@ class MaPetTest(unittest.TestCase):
 
             # Scroll to bottom
             xSilver = self.driver.find_element_by_xpath('//XCUIElementTypeScrollView/XCUIElementTypeOther[3]').size['width'] / 2
-            ySilver = self.driver.find_element_by_name('Silver').location['y']
+            ySilver = self.driver.find_element_by_name('Silver').location['y'] + 100
             xPhotos = self.driver.find_element_by_xpath('//XCUIElementTypeScrollView/XCUIElementTypeOther[3]').size['width'] / 2
-            yPhotos = self.driver.find_element_by_name('Photos').location['y']
+            yPhotos = self.driver.find_element_by_name('Photos').location['y'] + 100
 
-            self.driver.swipe(xSilver, ySilver, xPhotos, yPhotos, 1000)
+            self.driver.swipe(xSilver, ySilver, xPhotos - xSilver, yPhotos - ySilver, 1000)
             print(xSilver, ySilver, xPhotos, yPhotos)
 
             # Create Offer
