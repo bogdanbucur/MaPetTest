@@ -25,6 +25,13 @@ class MaPetTest(unittest.TestCase):
     # Register
     def test_001(self):
         sleep(2)
+
+        try:
+            self.driver.find_element_by_accessibility_id('Allow').click()
+        except:
+            pass
+
+        sleep(2)
         self.driver.find_element_by_name('REGISTER').click()
 
         # Input Email Address
@@ -146,9 +153,9 @@ class MaPetTest(unittest.TestCase):
             self.driver.find_element_by_accessibility_id('CONTINUE').click()
             sleep(2)
 
-        # Input Name
-        self.driver.find_element_by_accessibility_id('ADD PET').click()
-        sleep(2)
+            # Input Name
+            self.driver.find_element_by_accessibility_id('ADD PET').click()
+            sleep(2)
 
         nameField = self.driver.find_elements_by_class_name('XCUIElementTypeTextField')[0]
         nameField.click()
@@ -361,6 +368,13 @@ class MaPetTest(unittest.TestCase):
         self.driver.find_element_by_name('Done').click()
 
         # Add Location
+
+        try:
+            self.driver.find_element_by_accessibility_id('Allow').click()
+        except:
+            pass
+
+        sleep(2)
         self.driver.find_element_by_name('Location').click()
         self.driver.find_elements_by_class_name('XCUIElementTypeCell')[0].click()
 
@@ -368,6 +382,13 @@ class MaPetTest(unittest.TestCase):
         self.driver.find_element_by_name('icn_bazaar_add.png').click()
         self.driver.find_element_by_name('Import from Gallery').click()
         sleep(2)
+
+        try:
+            self.driver.find_element_by_accessibility_id('OK').click()
+        except:
+            pass
+
+        sleep(1)
         self.driver.find_elements_by_class_name('XCUIElementTypeCell')[1].click()
         self.driver.find_element_by_name('Select(1)').click()
 
@@ -489,6 +510,71 @@ class MaPetTest(unittest.TestCase):
             # Create Offer
             self.driver.find_element_by_name('Create').click()
             sleep(4)
+
+    # Create a Lost And Found Post
+    def test_012(self):
+        sleep(2)
+
+        # Go to Settings
+        self.driver.find_element_by_accessibility_id('icn settings').click()
+        sleep(2)
+
+        # Go to Lost and Found
+        self.driver.find_element_by_accessibility_id('Lost & Found').click()
+        sleep(2)
+
+        # Press Add Announcement and Input Title
+        self.driver.find_element_by_accessibility_id('ADD ANNOUNCEMENT').click()
+        titleField = self.driver.find_elements_by_class_name('XCUIElementTypeTextField')[0]
+        titleField.click()
+        titleField.send_keys('I lost my precious Fluff!')
+        self.driver.find_element_by_accessibility_id('Done').click()
+
+        # Input Description
+        descField = self.driver.find_elements_by_class_name('XCUIElementTypeTextView')[0]
+        descField.click()
+        descField.send_keys("I've lost my Fluff :(( . Please, if anyone have seen him, send me a picture with him and give him back to me. He means so much to me. He must be very scared all by himself. OMG. "
+                            "I can't even.")
+        self.driver.find_element_by_accessibility_id('Done').click()
+
+        # Select Lost
+        self.driver.find_element_by_accessibility_id('Lost').click()
+
+        # Input Date
+        self.driver.find_elements_by_class_name('XCUIElementTypeTextField')[1].click()
+        self.driver.find_element_by_accessibility_id('Done').click()
+
+        # Add Photo
+        self.driver.find_element_by_accessibility_id('icn_bazaar_add.png').click()
+        self.driver.find_element_by_accessibility_id('Import from Gallery').click()
+        sleep(2)
+        self.driver.find_elements_by_class_name('XCUIElementTypeCell')[3].click()
+        self.driver.find_element_by_accessibility_id('Select(1)').click()
+
+        # Scroll to Bottom
+        xPhotos = self.driver.find_element_by_accessibility_id('Photos').size['width'] / 2
+        yPhotos = self.driver.find_element_by_accessibility_id('Photos').location['y']
+        yDescField = descField.location['y']
+
+        self.driver.swipe(xPhotos, yPhotos, xPhotos - xPhotos, yDescField - yPhotos, 1000)
+
+        # Input Species
+        self.driver.find_element_by_name('Species').click()
+
+        xPicker = self.driver.find_element_by_class_name('XCUIElementTypePicker').size['width'] / 2
+        yPicker = self.driver.find_element_by_class_name('XCUIElementTypePicker').location['y']
+
+        self.driver.swipe(xPicker, yPicker, xPicker - xPicker, yPicker - yPicker + 130)
+        self.driver.find_element_by_accessibility_id('Done').click()
+
+        # Input Breed
+        self.driver.find_element_by_name('Breed').click()
+        self.driver.swipe(xPicker, yPicker, xPicker - xPicker, yPicker - yPicker + 65)
+        self.driver.find_element_by_accessibility_id('Done').click()
+
+        # Create Post
+        self.driver.find_element_by_accessibility_id('CREATE').click()
+        sleep(4)
 
     def tearDown(self):
         self.driver.quit()
